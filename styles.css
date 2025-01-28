@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Jersey+10&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Jersey+10&family=Knewave&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Estilo del header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00AAFF;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 10px 20px;
+    z-index: 10000;
+}
+
+/* Logo en el lateral izquierdo */
+.logo {
+    width: 50px;
+    height: 50px;
+    background-image: url('tu-imagen-logo.jpg'); /* Cambia esta URL con la de tu logo */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Menú de navegación */
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Botón "Comprar Páginas" */
+.btn-comprar {
+    background-color: #FFEE00;
+    color: #00AAFF;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-right: 50px;
+}
+
+/* Estilo para la sección principal (imagen de fondo) */
+.hero {
+    background-image: url('IMG/PRINCIPAL.PNG'); /* Cambia esta URL con la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.btn-adquirir {
+    background-color: #00AAFF;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 35px;
+    border-radius: 25px;
+}
+
+
+.btn-adquirir:hover {
+    background-color: #FFEE00;
+    color: #00AAFF;
+}
+
+/* Estilos generales para la sección "nosotros" */
+.nosotros {
+    display: flex;
+    justify-content: space-between;
+    height: 80vh; /* Ajusta esto si deseas un alto diferente */
+    background-color: #000000;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.texto-nosotros {
+    width: 50%;
+    height: 50vh; /* Ocupa la mitad de la pantalla */
+    padding: 50px;
+    box-sizing: border-box;
+    color: white;
+    background-color: #000000;
+    margin-top: 5%;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.img-nosotros {
+    width: 50%; /* Ocupa la otra mitad de la pantalla */
+}
+
+.img-nosotros img {
+    width: 100%; /* La imagen se ajusta al contenedor */
+    height: auto;
+    filter: blur(2px);
+}
+
+.btn-sobre-nosotros {
+    background-color: #00AAFF;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 20px;
+}
+
+.btn-sobre-nosotros:hover {
+    background-color: #FFEE00;
+    color: #00AAFF;
+}
+
+.boton-sobre-nosotros {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+}
+
+/* Media Query para pantallas pequeñas (dispositivos móviles) */
+@media (max-width: 768px) {
+    .nosotros {
+        flex-direction: column; /* Apilar los elementos verticalmente en pantallas pequeñas */
+        height: auto; /* Ajusta la altura cuando está apilado */
+    }
+
+    .texto-nosotros {
+        width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+        height: auto; /* Ajusta la altura de acuerdo al contenido */
+        padding: 20px; /* Reduce el padding */
+        margin-top: 20px; /* Un poco de espacio desde arriba */
+        font-size: 1.2rem; /* Reduce el tamaño de fuente */
+    }
+
+    .img-nosotros {
+        width: 100%; /* La imagen ocupa todo el ancho */
+        height: auto; /* Mantener la relación de aspecto de la imagen */
+    }
+
+    .img-nosotros img {
+        width: 100%; /* La imagen ocupa todo el ancho */
+        height: auto;
+        filter: none; /* Elimina el filtro de desenfoque en pantallas pequeñas */
+    }
+
+    .btn-sobre-nosotros {
+        font-size: 1.1rem; /* Aumentar ligeramente el tamaño del botón */
+        padding: 10px 18px; /* Ajusta el padding */
+    }
+}
+
+/* Media Query para pantallas aún más pequeñas (móviles en orientación vertical) */
+@media (max-width: 480px) {
+    .texto-nosotros {
+        font-size: 1rem; /* Reduce aún más el tamaño del texto */
+        padding: 15px; /* Reduce el padding */
+    }
+
+    .btn-sobre-nosotros {
+        font-size: 1rem; /* Ajusta el tamaño del texto del botón */
+        padding: 8px 15px; /* Ajusta el padding para pantallas muy pequeñas */
+    }
+}
+
+
+/* General styles for the services section */
+.servicios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto; /* Ajusta la altura según el contenido */
+    background-color: #000000;
+    color: white;
+    font-size: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.servicios-texto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    height: auto; /* Ajusta la altura según el contenido */
+    background-color: #000000;
+    color: white;
+    font-size: 30px;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+}
+
+/* Styles for the text section */
+.texto-servicios {
+    width: 100%; /* 100% width since the layout is single column on smaller screens */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.3;
+}
+
+/* Padding for 'Te ofrecemos' section */
+.te-ofrecemos {
+    padding: 0 8%; /* Agrega espacio en los laterales */
+    margin-bottom: 5%;
+}
+
+
+/* Specific styles for each service item */
+.servicio-item {
+    margin-top: 20px; /* Espaciado entre los elementos */
+    position: relative; /* Para los iconos de flecha */
+}
+
+.servicio-item:hover {
+    color: #FFEE00;
+}
+
+.texto {
+    margin-left: 10%; /* Espaciado para el texto */
+    letter-spacing: 0.1em; /* Ajusta el espacio entre letras */
+    text-align: left;
+    font-size: 1.2rem;
+}
+.img-servicios{
+    width: 100%;
+}
+
+.img-servicios img{
+    width: 100%;
+}
+
+/* Flecha abajo (icono) */
+.bi-chevron-down {
+    position: absolute;
+    right: 10%; /* Alinea las flechas al lado derecho */
+    font-size: 1.5em; /* Tamaño de la flecha */
+}
+
+/* Responsive Design - Ajuste en pantallas más pequeñas */
+@media (max-width: 768px) {
+    .servicios {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto-servicios {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .bi-chevron-down {
+        font-size: 1.2em;
+        right: 5%; /* Ajuste de la flecha para pantallas pequeñas */
+    }
+}
+
+
+/* --------------------- */
+
+
+
+/* Styling for each service item */
+.servicio-item {
+    margin-top: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.texto {
+    margin-left: 10%;
+    letter-spacing: 0.1em;
+    font-size: 1.2rem;
+}
+
+/* Hide the expanded content by default */
+.servicio-desplegado {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.service-img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+
+
+/* CARRUSEL */ 
+.carrusel {
+    background-color: #000000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; /* Evita el salto de línea */
+    overflow: hidden; /* Evita que las tarjetas se salgan */
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    scroll-snap-type: x mandatory; /* Desplazamiento fluido en móviles */
+}
+
+.carrusel__box {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 auto; /* Evita que se reduzcan */
+    justify-content: center;
+    border: 1px solid #00AAFF;
+    border-radius: 20px;
+    width: 80%; /* Ajustable en pantallas grandes */
+    max-width: 400px; /* Máximo tamaño para evitar que sea muy grande */
+    height: auto;
+    margin: 10px;
+    padding: 1%;
+    scroll-snap-align: center; /* Centra el elemento en móviles */
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.carrusel__box__img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+.stars {
+    font-size: 25px;
+}
+
+article{
+    background-color: #000000;
+}
+
+/* Animación de desplazamiento del carrusel */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+    25% { transform: translate X(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    55% { transform: translateX(-250%); }
+    60% { transform: translateX(-280%); }
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(0); } /* Regresa al inicio */
+}
+
+/* Aplicar animación solo en pantallas grandes */
+@media (min-width: 768px) {
+    .carrusel {
+        background-color: #000000;
+        animation: slide 40s linear infinite;
+    }
+}
+
+/* Hacerlo responsive en pantallas pequeñas */
+
+
+.titulo {
+    background-color: black;
+    color: #FFEE00;
+    margin: 0%;
+    display: flex;
+    justify-content: center;   
+    font-family: "Krona One", serif; 
+    padding-top: 4%;
+    padding-bottom: 4%;
+    font-size: 45px;
+}
+
+.primer__titulo {
+    font-family: "Jersey 10", serif;
+    font-size: 90px !important;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.3;
+}
+
+.linea__hr {
+    background-color: #000000;
+    display: flex;
+    justify-content: end;
+}
+
+.servicios__imagenes{
+    background-color: #000000;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.servicios__border_imagenes1 {
+    border: 3px solid #FFEE00;
+    border-radius: 50px;
+}
+.servicios__border_imagenes2 {
+    border: 3px solid #00AAFF;
+    border-radius: 50px;
+}
+
+.servicios__imagenes img {
+    transition: transform 0.3s ease; /* Añadimos una transición para suavizar el cambio */  
+}
+
+.servicios__imagenes img:hover {
+    transform: scale(1.2); /* Agrandamos la imagen al pasar el mouse */
+}
+
+.box__btn__servicio{
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    padding-top: 85px;
+    padding-bottom: 80px;
+    width: 100%;
+}
+
+#btn-adquirir-servicio{
+    width: 468px;
+    height: 97px;
+    border-radius: 50px;
+    font-family: "Knewave", serif;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+#btn-adquirir-servicio:hover{
+    background-color: #00AAFF;
+    color: #FFEE00;
+}
+  
+#footer{
+    background-color: #00AAFF;
+    padding: 15px;
+    color: white;
+}
+
+.redes__sociales{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10vh;
+    width: 100%;
+}
+
+.redes__sociales__texto{
+    margin-left: 20px;
+}
+
+.a_servicios_btn{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'irish';
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+
+.menu-hamburguesa {
+    width: 40px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-hamburguesa span {
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 767px) {
+    .carrusel {
+        overflow-x: auto; /* Permite desplazamiento lateral en móviles */
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+    }
+
+    .carrusel__box {
+        width: 90%; /* Más grande en móviles */
+        max-width: 300px;
+    }
+
+    .h1{
+        font-size: 2px;
+    }
+
+    .box__btn__servicio{
+        display: flex;
+        justify-content: center;
+    }
+
+    #btn-adquirir-servicio{
+        width: 300px;
+        height: auto;
+        font-size: 25px;
+        overflow: hidden;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+    nav, .logo {
+        display: none;
+    }
+
+    .menu-hamburguesa{
+        display: flex;
+    }
+
+    .btn-comprar {
+        margin-right: 120px;
+
+    }
+}

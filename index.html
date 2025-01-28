@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlazamos el archivo CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo" style="background-color: rgba(255, 255, 255, 0.439); border-radius: 10%; margin-left: 10%;">
+            <img src="IMG/ICON.png" alt="" width="55px">
+        </div>
+
+        <div class="menu-hamburguesa" onclick="menu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav>
+            <a href="#header">INICIO</a>
+            <a href="#sobre-nosotros">SOBRE NOSOTROS</a>
+            <a href="#servicios">SERVICIOS</a>
+            <a href="#portafolio">PORTAFOLIO</a>
+            <a href="#footer">CONTACTO</a>
+        </nav>
+        <button class="btn-comprar" id="header" onclick="window.location.href='https://wa.me/tu-numero-de-wpp'">COMPRAR PÁGINA</button>
+    </header>
+
+    <!-- Sección Principal -->
+    <div class="hero">
+        <h1 class="primer__titulo">DAMOS VIDA A TU PRESENCIA <br> DIGITAL CON CADA CLICK</h1> <br><br>
+        <button class="btn-adquirir" onclick="window.location.href='https://wa.me/tu-numero-de-wpp'">ADQUIRIR SERVICIO</button>
+    </div>
+
+    <article>
+        <div class="nosotros">
+            <div class="texto-nosotros">
+                <h2>En <strong style="color: #FFEE00;">MY TIENDA WEB</strong> nos dedicamos a transformar tus ideas en experiencias digitales únicas. Si estás buscando una página web que combine diseño atractivo, funcionalidad y rendimiento, ¡estás en el lugar correcto!</h2>
+                <div class="boton-sobre-nosotros">
+                    <button class="btn-sobre-nosotros">SOBRE NOSOTROS</button>
+                </div>
+            </div>
+            <div class="img-nosotros"> 
+                <img src="IMG/NOSOTROS.PNG" alt="Imagen Nosotros">
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <div class="servicios">
+            <!-- Contenedor de la imagen principal -->
+            
+            <article class="servicios-texto">
+                <div class="texto-servicios">
+                    <div class="img-servicios"> 
+                        <img src="IMG/SERVICIOS.PNG" alt="Imagen Servicios" id="main-image">
+                    </div>
+                    <div class="te-ofrecemos">
+                        Te ofrecemos un servicio completo, desde el diseño personalizado hasta el desarrollo de soluciones a medida que se adaptan perfectamente a tus necesidades.
+                    </div>
+                    
+                </div>
+            </article>
+            <!-- Servicio 1 -->
+            <div class="servicio-item" onclick="toggleService(1)">
+                <p class="texto">Un paso más adelante <i class="bi bi-chevron-down" aria-hidden="true"></i></p>
+                <div class="servicio-desplegado" id="service-1">
+                    <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae libero leo. Nulla facilisi.</p>
+                    <img src="IMG/SERVICIO-1.PNG" alt="Servicio 1" class="service-img" id="img-1">
+                </div>
+            </div>
+
+            <!-- Servicio 2 -->
+            <div class="servicio-item" onclick="toggleService(2)">
+                <p class="texto">Servicios a Obtener <i class="bi bi-chevron-down" aria-hidden="true"></i></p>
+                <div class="servicio-desplegado" id="service-2">
+                    <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae libero leo. Nulla facilisi.</p>
+                    <img src="IMG/SERVICIO-2.PNG" alt="Servicio 2" class="service-img" id="img-2">
+                </div>
+            </div>
+            
+            <!-- Servicio 3 -->
+            <div class="servicio-item" onclick="toggleService(3)">
+                <p class="texto">Hosting y Dominio Gratuito <i class="bi bi-chevron-down" aria-hidden="true"></i></p>
+                <div class="servicio-desplegado" id="service-3">
+                    <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae libero leo. Nulla facilisi.</p>
+                    <img src="IMG/SERVICIO-3.PNG" alt="Servicio 3" class="service-img" id="img-3">
+                </div>
+            </div>
+        </div>        
+    </article>
+    <div class="linea__hr">
+        <img src="IMG/Line 11.png" alt="linea">
+    </div>
+    
+    <h1 class="titulo">TESTIMONIOS</h1>
+
+    <article>
+        <div class="carrusel">
+            <div class="carrusel__box">
+                <img src="IMG/SERVICIO-1.PNG" alt="usuarios" class="carrusel__box__img">
+                <p class="stars">⭐⭐⭐⭐</p>
+                <p class="texto">"No tenía idea de cómo hacer una página web para mi negocio, pero este servicio fue increíble. Me guiaron en cada paso, desde la elección del diseño hasta la optimización para móviles. Ahora tengo una web profesional que ha atraído muchos más clientes." – Ana G.</p>         
+            </div>
+            <div class="carrusel__box">
+                <img src="IMG/SERVICIO-1.PNG" alt="usuarios" class="carrusel__box__img">
+                <p class="stars">⭐⭐⭐☆☆ </p>
+                <p class="texto">"¡Totalmente recomendado! Necesitaba una web moderna y funcional, y el resultado superó mis expectativas. Además de un diseño atractivo, me entregaron una página optimizada para SEO, lo que me ha ayudado a ganar más visibilidad en Google." – Luis M.</p>         
+            </div>
+            <div class="carrusel__box">
+                <img src="IMG/SERVICIO-1.PNG" alt="usuarios" class="carrusel__box__img">
+                <p class="stars">⭐⭐⭐⭐☆</p>
+                <p class="texto">"No solo obtuve una web hermosa, sino que también me dieron consejos para mejorar la experiencia de usuario. Ahora mis clientes pueden navegar fácilmente y realizar compras sin problemas. Estoy muy contento con el resultado." – Carlos R.</p>         
+            </div>
+            <div class="carrusel__box">
+                <img src="IMG/SERVICIO-1.PNG" alt="usuarios" class="carrusel__box__img">
+                <p class="stars">⭐⭐⭐☆☆ </p>
+                <p class="texto">"Desde la primera reunión entendieron exactamente lo que quería. Mi sitio web refleja perfectamente mi marca y comunica mi mensaje de manera clara y profesional. La atención al detalle es impresionante." – Marta P.</p>         
+            </div>
+            <div class="carrusel__box">
+                <img src="IMG/SERVICIO-1.PNG" alt="usuarios" class="carrusel__box__img">
+                <p class="stars">⭐⭐⭐⭐☆ </p>
+                <p class="texto">"Mi empresa necesitaba una web corporativa con funcionalidades avanzadas, y este equipo lo logró con éxito. Me entregaron un sitio rápido, seguro y fácil de administrar. Definitivamente los volveré a contratar en el futuro." – Pedro S.</p>         
+            </div>
+            <div class="carrusel__box">
+                <img src="IMG/SERVICIO-1.PNG" alt="usuarios" class="carrusel__box__img">
+                <p class="stars">⭐⭐⭐⭐</p>
+                <p class="texto">"Mi empresa necesitaba una web corporativa con funcionalidades avanzadas, y este equipo lo logró con éxito. Me entregaron un sitio rápido, seguro y fácil de administrar. Definitivamente los volveré a contratar en el futuro." – Pedro S.</p>         
+            </div>
+        </div>        
+    </article>
+
+
+    <h1 class="titulo">SERVICIOS</h1>
+    
+    <section class="ellipse">
+        <article class="servicios__imagenes">
+            <img src="IMG/01.png" alt="Paginas web" class="servicios__border_imagenes1">
+            <img src="IMG/02.png" alt="Paginas web" class="servicios__border_imagenes2">
+            <img src="IMG/03.png" alt="Paginas web" class="servicios__border_imagenes1">
+        </article>
+        <article class="servicios__imagenes">
+            <img src="IMG/04.png" alt="Paginas web" class="servicios__border_imagenes2">
+            <img src="IMG/05.png" alt="Paginas web" class="servicios__border_imagenes1">
+            <img src="IMG/06.png" alt="Paginas web" class="servicios__border_imagenes2">
+        </article>
+    </section>
+
+    <a href="" class="a_servicios_btn">
+        <section class="box__btn__servicio">
+            <button class="btn-comprar" id="btn-adquirir-servicio">ADQUIRIR SERVICIO</button> 
+        </section>
+    </a>
+
+    <footer id="footer">
+        <div class="redes__sociales">
+            
+            <a href="">  
+                <p class="redes__sociales__texto">FAECEBOOK</p>
+                <img src="./IMG/Facebook.png" alt="Logo Facebook">
+            </a>
+
+            <a href="">
+                <p class="redes__sociales__texto">WHATSAPP</p>
+                <img src="./IMG/Whatsaap.png" alt="Logo Whatsaap">
+            </a>
+
+            <a href="">
+                <p class="redes__sociales__texto">INSTAGRAM</p>
+                <img src="./IMG/Ig.png" alt="Logo Ig">
+            </a>
+
+            <a href="">
+                <p class="redes__sociales__texto">TIKTOK</p>
+                <img src="./IMG/Tiktok.png" alt="Logo Tiktok">
+            </a>
+        </div>
+        copyright (©) 2025
+    </footer>
+    <script src="main.js"></script>
+
+</body>
+</html>
