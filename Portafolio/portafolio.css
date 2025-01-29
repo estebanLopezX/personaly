@@ -1,0 +1,104 @@
+#portafolio{
+    padding: 15rem 0%;
+    background-color: #000;
+}
+.proyectos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    max-width: 80rem;
+    margin: auto;
+}
+
+.proyecto {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    padding: 15px;
+}
+
+.proyecto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.proyecto h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.proyecto p {
+    font-size: 1em;
+    color: #555;
+}
+
+.proyecto a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.proyecto a:hover {
+    background: #0056b3;
+}
+
+.proyecto {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+    position: relative;
+}
+
+/* FONDOS CREATIVOS PARA LAS TARJETAS */
+.proyecto:nth-child(1) { background: linear-gradient(135deg, #00ddff, #093d47); } /* Rojo apagado */
+.proyecto:nth-child(2) { background: linear-gradient(135deg, #5a3fc1, #c8aee8); } /* Morado suave */
+.proyecto:nth-child(3) { background: linear-gradient(135deg, #1f6fe6, #8ab3e0); } /* Azul medio */
+.proyecto:nth-child(4) { background: linear-gradient(135deg, #23a4b8, #a9dee3); } /* Azul verdoso */
+.proyecto:nth-child(5) { background: linear-gradient(135deg, #169d37, #7dd689); } /* Verde fresco */
+.proyecto:nth-child(6) { background: linear-gradient(135deg, #b6c304, #d6e85c); } /* Amarillo oliva */
+.proyecto:nth-child(7) { background: linear-gradient(135deg, #d88715, #f1c37a); } /* Naranja suave */
+.proyecto:nth-child(8) { background: linear-gradient(135deg, #b32d33, #f4d0c5); } /* Rojo apagado */
+.proyecto:nth-child(9) { background: linear-gradient(135deg, #5a3fc1, #c8aee8); } /* Morado suave */
+.proyecto:nth-child(10) { background: linear-gradient(135deg, #1f6fe6, #8ab3e0); } /* Azul medio */
+
+
+/* ESTILO PARA EL TEXTO Y BOTÓN */
+.proyecto h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.proyecto p {
+    font-size: 1em;
+    color: #fff;
+}
+
+.proyecto a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.proyecto a:hover {
+    background: rgba(255, 255, 255, 0.6);
+}

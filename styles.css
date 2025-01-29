@@ -129,10 +129,11 @@ nav a {
     background-color: #00AAFF;
     color: white;
     border: none;
-    padding: 12px 20px;
+    padding: 2% 4%;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.3rem;
     border-radius: 20px;
+    font-family: 'Irish', sans-serif;
 }
 
 .btn-sobre-nosotros:hover {
@@ -144,11 +145,11 @@ nav a {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 8%;
+    padding-top: 8%;
 }
 
 /* Media Query para pantallas pequeñas (dispositivos móviles) */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .nosotros {
         flex-direction: column; /* Apilar los elementos verticalmente en pantallas pequeñas */
         height: auto; /* Ajusta la altura cuando está apilado */
@@ -180,7 +181,7 @@ nav a {
 }
 
 /* Media Query para pantallas aún más pequeñas (móviles en orientación vertical) */
-@media (max-width: 480px) {
+@media (max-width: 1200px) {
     .texto-nosotros {
         font-size: 1rem; /* Reduce aún más el tamaño del texto */
         padding: 15px; /* Reduce el padding */
@@ -201,9 +202,8 @@ nav a {
     height: auto; /* Ajusta la altura según el contenido */
     background-color: #000000;
     color: white;
-    font-size: 30px;
     flex-wrap: wrap;
-    padding: 20px;
+
 }
 
 .servicios-texto {
@@ -213,7 +213,7 @@ nav a {
     height: auto; /* Ajusta la altura según el contenido */
     background-color: #000000;
     color: white;
-    font-size: 30px;
+    font-size: 1.8rem;
     flex-wrap: wrap-reverse;
     width: 100%;
 }
@@ -269,7 +269,7 @@ nav a {
 }
 
 /* Responsive Design - Ajuste en pantallas más pequeñas */
-@media (max-width: 768px) {
+@media (max-width: 120px) {
     .servicios {
         width: 100%;
         flex-direction: column;
@@ -524,7 +524,7 @@ a{
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
     .carrusel {
         overflow-x: auto; /* Permite desplazamiento lateral en móviles */
         scroll-snap-type: x mandatory;
@@ -564,8 +564,16 @@ a{
         display: flex;
     }
 
-    .btn-comprar {
-        margin-right: 120px;
+    #primer__titulo2{
+        font-size: 4rem !important;
+    }
 
+    .texto-servicios{
+        flex-direction: column-reverse;
+        width: auto;
+    }
+
+    .btn-sobre-nosotros{
+        font-size: 1.2rem;
     }
 }

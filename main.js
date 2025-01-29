@@ -52,9 +52,9 @@ function menu() {
     // Aplicar estilos al menú vertical
     nuevoMenu.style.position = "fixed";
     nuevoMenu.style.top = "0";
-    nuevoMenu.style.right = "0"; // Menú aparece desde la derecha
+    nuevoMenu.style.left = "0"; // Menú aparece desde la derecha
     nuevoMenu.style.width = "50vw"; // Ocupar la mitad de la pantalla (50% del viewport)
-    nuevoMenu.style.height = "100vh"; // Ocupar toda la altura
+    nuevoMenu.style.height = "100%"; // Ocupar toda la altura
     nuevoMenu.style.background = "#00AAFF"; // Azul semi-transparente
     nuevoMenu.style.display = "flex";
     nuevoMenu.style.flexDirection = "column"; // Apilar elementos verticalmente
@@ -69,9 +69,12 @@ function menu() {
         enlace.style.color = "white";
         enlace.style.fontSize = "20px";
         enlace.style.textDecoration = "none";
-        enlace.style.padding = "10px 20px";
+        enlace.style.padding = "5px 15px";
         enlace.style.borderRadius = "5px";
         enlace.style.transition = "background 0.3s";
+        enlace.style.width = "100%";
+        enlace.style.display = "flex";
+        enlace.style.justifyContent = "center";
         
         enlace.addEventListener("mouseover", () => {
             enlace.style.background = "rgba(255, 255, 255, 0.3)";
