@@ -42,11 +42,11 @@ function menu() {
     let nuevoMenu = document.createElement('nav');
     nuevoMenu.id = "menu-nav"; // Asignar un ID
     nuevoMenu.innerHTML = `
-        <a href="#inicio">INICIO</a>
-        <a href="#sobre-nosotros">SOBRE NOSOTROS</a>
-        <a href="#servicios">SERVICIOS</a>
-        <a href="#portafolio">PORTAFOLIO</a>
-        <a href="#contacto">CONTACTO</a>
+            <a href="#header">INICIO</a>
+            <a href="./Sobre-Nosotros/about.html">SOBRE NOSOTROS</a>
+            <a href="#servicios">SERVICIOS</a>
+            <a href="./Portafolio/portafolio.html">PORTAFOLIO</a>
+            <a href="#footer">CONTACTO</a>
     `;
 
     // Aplicar estilos al menú vertical

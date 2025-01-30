@@ -1,28 +1,3 @@
-// Efecto de "exploración" del fondo parallax
-window.addEventListener('scroll', function () {
-    const parallax = document.querySelector('.parallax');
-    let scrollPosition = window.pageYOffset;
-    parallax.style.transform = 'translateY(' + scrollPosition * 0.5 + 'px)'; // Fondo se mueve lentamente
-});
-
-// Intersección para hacer desaparecer el contenido
-const sections = document.querySelectorAll(".section");
-
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.remove("hidden");
-        } else {
-            entry.target.classList.add("hidden");
-        }
-    });
-}, { threshold: 0.3 });
-
-sections.forEach(section => {
-    observer.observe(section);
-});
-
-
 
 /*-----------------------*/
 /*       HAMBURGUESA     */
@@ -41,11 +16,11 @@ function menu() {
     let nuevoMenu = document.createElement('nav');
     nuevoMenu.id = "menu-nav"; // Asignar un ID
     nuevoMenu.innerHTML = `
-        <a href="../index.html">INICIO</a>
-        <a href="./Sobre-Nosotros/about.html">SOBRE NOSOTROS</a>
-        <a href="#servicios">SERVICIOS</a>
-        <a href="../Portafolio/portafolio.html">PORTAFOLIO</a>
-        <a href="#footer">CONTACTO</a>
+            <a href="../index.html">INICIO</a>
+            <a href="../Sobre-Nosotros/about.html">SOBRE NOSOTROS</a>
+            <a href="#servicios">SERVICIOS</a>
+            <a href="portafolio.html">PORTAFOLIO</a>
+            <a href="#footer">CONTACTO</a>
     `;
 
     // Aplicar estilos al menú vertical
@@ -87,5 +62,4 @@ function menu() {
     // Añadir el menú al body
     cuerpoPagina.appendChild(nuevoMenu);
 }
-
 
