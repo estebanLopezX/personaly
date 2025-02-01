@@ -485,13 +485,57 @@ article {
     font-size: 45px;
 }
 
+
 .primer__titulo {
-    font-family: "Jersey 10", serif;
-    font-size: 90px !important;
+    font-size: 90px !important; /* Tamaño del texto */
     font-weight: 400;
     font-style: normal;
-    line-height: 1.3;
+    font-family: "Jersey 10", serif; /* Fuente monoespaciada para simular escritura */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta el texto que aún no ha sido escrito */
+    border-right: 3px solid #0fb4ff; /* Agrega un cursor al estilo máquina de escribir */
+    padding-right: 5px; /* Espacio después del cursor */
+    display: inline-block;
+    width: 0; /* Inicia el ancho en 0 */
+    opacity: 0; /* Inicialmente invisible */
+    animation: typing 6s steps(30) 0s 1 normal forwards, blink 0.75s step-end infinite, fadeIn 6s linear infinite; /* Animación de escribir, parpadeo y desvanecimiento */
 }
+
+#text1 {
+    animation-delay: 0s; /* Primero escribe el primer texto */
+}
+
+#text2 {
+    animation-delay: 6s; /* Después de 6 segundos, escribe el segundo texto */
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+        opacity: 1;
+    }
+    100% {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent; /* El cursor parpadea */
+    }
+}
+
+@keyframes fadeIn {
+    0%, 50% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 0;
+    }
+}
+
+
 
 .linea__hr {
     background-color: #000000;
@@ -793,8 +837,8 @@ a {
         display: flex;
     }
 
-    #primer__titulo2 {
-        font-size: 3rem !important;
+    .primer__titulo {
+        font-size: 2.6rem !important;
     }
 
     .texto-servicios {
