@@ -66,6 +66,10 @@ nav a {
     border-radius: 5px;
 }
 
+.btn-comprar:hover{
+    background: #00e1ff;
+    color: #FFEE00;
+}
 /* Estilo para la sección principal (imagen de fondo) */
 .hero {
     background-image: url('IMG/PRINCIPAL.PNG');
