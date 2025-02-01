@@ -160,18 +160,27 @@
 
 .premium {
     position: absolute;
-    top: 45%;  /* Para que quede justo encima */
-    left: 38%;  /* Ajusta esta propiedad según sea necesario */
-    background: linear-gradient(135deg, rgb(238, 178, 25), rgb(255, 215, 0)); /* Gradiente tipo medalla */
-    padding: 0.5rem 4rem;
+    left: 45%;
+    top: 2%;
+    background-image: linear-gradient(45deg, #ff6547 0%, #ffb144  51%, #ff7053  100%);
+    padding: 0.5rem 4.2rem;
     font-size: 1.2rem;
     font-weight: bold;
     color: white;
-    transform: rotate(0deg) skew(-20deg); /* Rotate y skew para el efecto doblado */
+    transform: rotate(35deg); /* Rotate y skew para el efecto doblado */
     z-index: 100; /* Para que esté encima de otros elementos */
-    border-top-left-radius: 10px; /* Redondear las esquinas */
-    border-top-right-radius: 10px; /* Redondear las esquinas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
 }
+
+.premium::before{
+    content: "PREMIUM";
+}
+
+
 
 .centrar__titulo{
     display: flex;

@@ -789,6 +789,10 @@ a {
     justify-content: space-around;
 }
 
+.nav-hover:hover{
+    color: #00e1ff;
+}
+
 
 @media (max-width: 1200px) {
     .carrusel {
