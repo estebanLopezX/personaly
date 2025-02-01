@@ -18,7 +18,7 @@ function menu() {
     nuevoMenu.innerHTML = `
             <a href="../index.html">INICIO</a>
             <a href="../Sobre-Nosotros/about.html">SOBRE NOSOTROS</a>
-            <a href="#servicios">SERVICIOS</a>
+            <a href="../Servicios/servicios.html">SERVICIOS</a>
             <a href="portafolio.html">PORTAFOLIO</a>
             <a href="#footer">CONTACTO</a>
     `;

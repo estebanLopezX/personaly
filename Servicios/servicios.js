@@ -1,31 +1,4 @@
-// Efecto de "exploración" del fondo parallax
-window.addEventListener('scroll', function () {
-    const parallax = document.querySelector('.parallax');
-    let scrollPosition = window.pageYOffset;
-    parallax.style.transform = 'translateY(' + scrollPosition * 0.5 + 'px)'; // Fondo se mueve lentamente
-});
-
-// Intersección para hacer desaparecer el contenido
-const sections = document.querySelectorAll(".section");
-
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.remove("hidden");
-        } else {
-            entry.target.classList.add("hidden");
-        }
-    });
-}, { threshold: 0.3 });
-
-sections.forEach(section => {
-    observer.observe(section);
-});
-
-
-
-/*-----------------------*/
-/*       HAMBURGUESA     */
+/* HAMBURGUESA     */
 
 function menu() {
     let cuerpoPagina = document.querySelector('body');
@@ -42,7 +15,7 @@ function menu() {
     nuevoMenu.id = "menu-nav"; // Asignar un ID
     nuevoMenu.innerHTML = `
         <a href="../index.html">INICIO</a>
-        <a href="about.html">SOBRE NOSOTROS</a>
+        <a href="../Sobre-Nosotros/about.html">SOBRE NOSOTROS</a>
         <a href="../Servicios/servicios.html">SERVICIOS</a>
         <a href="../Portafolio/portafolio.html">PORTAFOLIO</a>
         <a href="#footer">CONTACTO</a>

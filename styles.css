@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Jersey+10&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Jersey+10&family=Knewave&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /* Estilos generales */
-body, html {
+
+
+body,
+html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -14,7 +17,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #00AAFF;
+    background: linear-gradient(to bottom, rgb(25, 160, 238), rgba(25, 160, 238, 0));
+    /* Gradiente difuminado */
     position: fixed;
     width: 100%;
     top: 0;
@@ -26,7 +30,8 @@ header {
 .logo {
     width: 50px;
     height: 50px;
-    background-image: url('tu-imagen-logo.jpg'); /* Cambia esta URL con la de tu logo */
+    background-image: url('tu-imagen-logo.jpg');
+    /* Cambia esta URL con la de tu logo */
     background-size: cover;
     background-position: center;
 }
@@ -59,7 +64,8 @@ nav a {
 
 /* Estilo para la sección principal (imagen de fondo) */
 .hero {
-    background-image: url('IMG/PRINCIPAL.PNG'); /* Cambia esta URL con la imagen de fondo */
+    background-image: url('IMG/PRINCIPAL.PNG');
+    /* Cambia esta URL con la imagen de fondo */
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -97,7 +103,8 @@ nav a {
 .nosotros {
     display: flex;
     justify-content: space-between;
-    height: 80vh; /* Ajusta esto si deseas un alto diferente */
+    height: 80vh;
+    /* Ajusta esto si deseas un alto diferente */
     background-color: #000000;
     flex-wrap: wrap;
     flex-direction: column;
@@ -105,7 +112,8 @@ nav a {
 
 .texto-nosotros {
     width: 50%;
-    height: 50vh; /* Ocupa la mitad de la pantalla */
+    height: 50vh;
+    /* Ocupa la mitad de la pantalla */
     padding: 50px;
     box-sizing: border-box;
     color: white;
@@ -116,11 +124,13 @@ nav a {
 }
 
 .img-nosotros {
-    width: 50%; /* Ocupa la otra mitad de la pantalla */
+    width: 50%;
+    /* Ocupa la otra mitad de la pantalla */
 }
 
 .img-nosotros img {
-    width: 100%; /* La imagen se ajusta al contenedor */
+    width: 100%;
+    /* La imagen se ajusta al contenedor */
     height: auto;
     filter: blur(2px);
 }
@@ -129,7 +139,7 @@ nav a {
     background-color: #00AAFF;
     color: white;
     border: none;
-    padding: 2% 4%;
+    padding: 2% 2%;
     cursor: pointer;
     font-size: 1.3rem;
     border-radius: 20px;
@@ -151,45 +161,62 @@ nav a {
 /* Media Query para pantallas pequeñas (dispositivos móviles) */
 @media (max-width: 1200px) {
     .nosotros {
-        flex-direction: column; /* Apilar los elementos verticalmente en pantallas pequeñas */
-        height: auto; /* Ajusta la altura cuando está apilado */
+        flex-direction: column;
+        /* Apilar los elementos verticalmente en pantallas pequeñas */
+        height: auto;
+        /* Ajusta la altura cuando está apilado */
     }
 
     .texto-nosotros {
-        width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
-        height: auto; /* Ajusta la altura de acuerdo al contenido */
-        padding: 20px; /* Reduce el padding */
-        margin-top: 20px; /* Un poco de espacio desde arriba */
-        font-size: 1.2rem; /* Reduce el tamaño de fuente */
+        width: 100%;
+        /* Ocupa todo el ancho en pantallas pequeñas */
+        height: auto;
+        /* Ajusta la altura de acuerdo al contenido */
+        padding: 20px;
+        /* Reduce el padding */
+        margin-top: 20px;
+        /* Un poco de espacio desde arriba */
+        font-size: 1.2rem;
+        /* Reduce el tamaño de fuente */
     }
 
     .img-nosotros {
-        width: 100%; /* La imagen ocupa todo el ancho */
-        height: auto; /* Mantener la relación de aspecto de la imagen */
+        width: 100%;
+        /* La imagen ocupa todo el ancho */
+        height: auto;
+        /* Mantener la relación de aspecto de la imagen */
     }
 
     .img-nosotros img {
-        width: 100%; /* La imagen ocupa todo el ancho */
+        width: 100%;
+        /* La imagen ocupa todo el ancho */
         height: auto;
-        filter: none; /* Elimina el filtro de desenfoque en pantallas pequeñas */
+        filter: none;
+        /* Elimina el filtro de desenfoque en pantallas pequeñas */
     }
 
     .btn-sobre-nosotros {
-        font-size: 1.1rem; /* Aumentar ligeramente el tamaño del botón */
-        padding: 10px 18px; /* Ajusta el padding */
+        font-size: 1.1rem;
+        /* Aumentar ligeramente el tamaño del botón */
+        padding: 10px 18px;
+        /* Ajusta el padding */
     }
 }
 
 /* Media Query para pantallas aún más pequeñas (móviles en orientación vertical) */
 @media (max-width: 1200px) {
     .texto-nosotros {
-        font-size: 1rem; /* Reduce aún más el tamaño del texto */
-        padding: 15px; /* Reduce el padding */
+        font-size: 1rem;
+        /* Reduce aún más el tamaño del texto */
+        padding: 15px;
+        /* Reduce el padding */
     }
 
     .btn-sobre-nosotros {
-        font-size: 1rem; /* Ajusta el tamaño del texto del botón */
-        padding: 8px 15px; /* Ajusta el padding para pantallas muy pequeñas */
+        font-size: 1rem;
+        /* Ajusta el tamaño del texto del botón */
+        padding: 8px 15px;
+        /* Ajusta el padding para pantallas muy pequeñas */
     }
 }
 
@@ -199,7 +226,8 @@ nav a {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: auto; /* Ajusta la altura según el contenido */
+    height: auto;
+    /* Ajusta la altura según el contenido */
     background-color: #000000;
     color: white;
     flex-wrap: wrap;
@@ -210,7 +238,8 @@ nav a {
     display: flex;
     justify-content: center;
     flex-direction: column-reverse;
-    height: auto; /* Ajusta la altura según el contenido */
+    height: auto;
+    /* Ajusta la altura según el contenido */
     background-color: #000000;
     color: white;
     font-size: 1.8rem;
@@ -220,7 +249,8 @@ nav a {
 
 /* Styles for the text section */
 .texto-servicios {
-    width: 100%; /* 100% width since the layout is single column on smaller screens */
+    width: 100%;
+    /* 100% width since the layout is single column on smaller screens */
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -232,15 +262,18 @@ nav a {
 
 /* Padding for 'Te ofrecemos' section */
 .te-ofrecemos {
-    padding: 0 8%; /* Agrega espacio en los laterales */
+    padding: 0 8%;
+    /* Agrega espacio en los laterales */
     margin-bottom: 5%;
 }
 
 
 /* Specific styles for each service item */
 .servicio-item {
-    margin-top: 20px; /* Espaciado entre los elementos */
-    position: relative; /* Para los iconos de flecha */
+    margin-top: 20px;
+    /* Espaciado entre los elementos */
+    position: relative;
+    /* Para los iconos de flecha */
 }
 
 .servicio-item:hover {
@@ -248,24 +281,29 @@ nav a {
 }
 
 .texto {
-    margin-left: 10%; /* Espaciado para el texto */
-    letter-spacing: 0.1em; /* Ajusta el espacio entre letras */
+    margin-left: 10%;
+    /* Espaciado para el texto */
+    letter-spacing: 0.1em;
+    /* Ajusta el espacio entre letras */
     text-align: left;
     font-size: 1.2rem;
 }
-.img-servicios{
+
+.img-servicios {
     width: 100%;
 }
 
-.img-servicios img{
+.img-servicios img {
     width: 100%;
 }
 
 /* Flecha abajo (icono) */
 .bi-chevron-down {
     position: absolute;
-    right: 10%; /* Alinea las flechas al lado derecho */
-    font-size: 1.5em; /* Tamaño de la flecha */
+    right: 10%;
+    /* Alinea las flechas al lado derecho */
+    font-size: 1.5em;
+    /* Tamaño de la flecha */
 }
 
 /* Responsive Design - Ajuste en pantallas más pequeñas */
@@ -283,7 +321,8 @@ nav a {
 
     .bi-chevron-down {
         font-size: 1.2em;
-        right: 5%; /* Ajuste de la flecha para pantallas pequeñas */
+        right: 5%;
+        /* Ajuste de la flecha para pantallas pequeñas */
     }
 }
 
@@ -321,18 +360,21 @@ nav a {
 
 
 
-/* CARRUSEL */ 
+/* CARRUSEL */
 .carrusel {
     background-color: #000000;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap; /* Evita el salto de línea */
-    overflow: hidden; /* Evita que las tarjetas se salgan */
+    flex-wrap: nowrap;
+    /* Evita el salto de línea */
+    overflow: hidden;
+    /* Evita que las tarjetas se salgan */
     color: white;
     text-align: center;
     width: 100%;
     height: auto;
-    scroll-snap-type: x mandatory; /* Desplazamiento fluido en móviles */
+    scroll-snap-type: x mandatory;
+    /* Desplazamiento fluido en móviles */
 }
 
 .carrusel__box {
@@ -340,16 +382,20 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 0 0 auto; /* Evita que se reduzcan */
+    flex: 0 0 auto;
+    /* Evita que se reduzcan */
     justify-content: center;
     border: 1px solid #00AAFF;
     border-radius: 20px;
-    width: 80%; /* Ajustable en pantallas grandes */
-    max-width: 400px; /* Máximo tamaño para evitar que sea muy grande */
+    width: 80%;
+    /* Ajustable en pantallas grandes */
+    max-width: 400px;
+    /* Máximo tamaño para evitar que sea muy grande */
     height: auto;
     margin: 10px;
     padding: 1%;
-    scroll-snap-align: center; /* Centra el elemento en móviles */
+    scroll-snap-align: center;
+    /* Centra el elemento en móviles */
     text-align: center;
     background-color: rgba(255, 255, 255, 0.1);
 }
@@ -363,22 +409,53 @@ nav a {
     font-size: 25px;
 }
 
-article{
+article {
     background-color: #000000;
 }
 
 /* Animación de desplazamiento del carrusel */
 @keyframes slide {
-    0% { transform: translateX(0); }
-    20% { transform: translateX(0); }
-    25% { transform: translate X(-100%); }
-    45% { transform: translateX(-100%); }
-    50% { transform: translateX(-200%); }
-    55% { transform: translateX(-250%); }
-    60% { transform: translateX(-280%); }
-    70% { transform: translateX(-200%); }
-    75% { transform: translateX(-300%); }
-    100% { transform: translateX(0); } /* Regresa al inicio */
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translate X(-100%);
+    }
+
+    45% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+
+    55% {
+        transform: translateX(-250%);
+    }
+
+    60% {
+        transform: translateX(-280%);
+    }
+
+    70% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+    /* Regresa al inicio */
 }
 
 /* Aplicar animación solo en pantallas grandes */
@@ -397,8 +474,8 @@ article{
     color: #FFEE00;
     margin: 0%;
     display: flex;
-    justify-content: center;   
-    font-family: "Krona One", serif; 
+    justify-content: center;
+    font-family: "Krona One", serif;
     padding-top: 4%;
     padding-bottom: 4%;
     font-size: 45px;
@@ -418,7 +495,7 @@ article{
     justify-content: end;
 }
 
-.servicios__imagenes{
+.servicios__imagenes {
     background-color: #000000;
     display: flex;
     justify-content: space-evenly;
@@ -431,20 +508,23 @@ article{
     border: 3px solid #FFEE00;
     border-radius: 50px;
 }
+
 .servicios__border_imagenes2 {
     border: 3px solid #00AAFF;
     border-radius: 50px;
 }
 
 .servicios__imagenes img {
-    transition: transform 0.3s ease; /* Añadimos una transición para suavizar el cambio */  
+    transition: transform 0.3s ease;
+    /* Añadimos una transición para suavizar el cambio */
 }
 
 .servicios__imagenes img:hover {
-    transform: scale(1.2); /* Agrandamos la imagen al pasar el mouse */
+    transform: scale(1.2);
+    /* Agrandamos la imagen al pasar el mouse */
 }
 
-.box__btn__servicio{
+.box__btn__servicio {
     display: flex;
     justify-content: center;
     background-color: #000000;
@@ -453,7 +533,7 @@ article{
     width: 100%;
 }
 
-#btn-adquirir-servicio{
+#btn-adquirir-servicio {
     width: 468px;
     height: 97px;
     border-radius: 50px;
@@ -467,18 +547,21 @@ article{
     margin: 0;
 }
 
-#btn-adquirir-servicio:hover{
+#btn-adquirir-servicio:hover {
     background-color: #00AAFF;
     color: #FFEE00;
 }
-  
-#footer{
-    background-color: #00AAFF;
+
+#footer {
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(6, 154, 240), rgb(25, 135, 238)); /* Gradiente a azul sólido */
     padding: 15px;
     color: white;
 }
 
-.redes__sociales{
+
+
+
+.redes__sociales {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -486,11 +569,11 @@ article{
     width: 100%;
 }
 
-.redes__sociales__texto{
+.redes__sociales__texto {
     margin-left: 20px;
 }
 
-.a_servicios_btn{
+.a_servicios_btn {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -498,7 +581,7 @@ article{
     justify-content: center;
 }
 
-a{
+a {
     text-decoration: none;
     font-family: 'irish';
     font-weight: 400;
@@ -524,59 +607,6 @@ a{
 }
 
 
-@media (max-width: 1200px) {
-    .carrusel {
-        overflow-x: auto; /* Permite desplazamiento lateral en móviles */
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-    }
-
-    .carrusel__box {
-        width: 90%; /* Más grande en móviles */
-        max-width: 300px;
-    }
-
-    .h1{
-        font-size: 2px;
-    }
-
-    .box__btn__servicio{
-        display: flex;
-        justify-content: center;
-    }
-
-    #btn-adquirir-servicio{
-        width: 300px;
-        height: auto;
-        font-size: 25px;
-        overflow: hidden;
-    }
-
-    p{
-        font-size: 15px;
-    }
-
-    nav, .logo {
-        display: none;
-    }
-
-    .menu-hamburguesa{
-        display: flex;
-    }
-
-    #primer__titulo2{
-        font-size: 4rem !important;
-    }
-
-    .texto-servicios{
-        flex-direction: column-reverse;
-        width: auto;
-    }
-
-    .btn-sobre-nosotros{
-        font-size: 1.2rem;
-    }
-}
 
 
 
@@ -703,10 +733,79 @@ a{
 .bubble-background {
     position: fixed;
     padding-top: 20rem;
-    width: 100%;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-around;
+}
+
+
+@media (max-width: 1200px) {
+    .carrusel {
+        overflow-x: auto;
+        /* Permite desplazamiento lateral en móviles */
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+    }
+
+    .carrusel__box {
+        width: 90%;
+        /* Más grande en móviles */
+        max-width: 300px;
+    }
+
+    .h1 {
+        font-size: 2px;
+    }
+
+    .box__btn__servicio {
+        display: flex;
+        justify-content: center;
+    }
+
+    #btn-adquirir-servicio {
+        width: 300px;
+        height: auto;
+        font-size: 25px;
+        overflow: hidden;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    nav,
+    .logo {
+        display: none;
+    }
+
+    .menu-hamburguesa {
+        display: flex;
+    }
+
+    #primer__titulo2 {
+        font-size: 3rem !important;
+    }
+
+    .texto-servicios {
+        flex-direction: column-reverse;
+        width: auto;
+    }
+
+    .btn-sobre-nosotros {
+        font-size: 1.2rem;
+    }
+
+    .bubble-background{
+        align-items: start;
+        flex-direction: column;
+        height: 80%;
+        margin-left: -2rem;
+    }
+
+    .servicios__border_imagenes1, .servicios__border_imagenes2{
+        width: 70%;
+    }
 }
