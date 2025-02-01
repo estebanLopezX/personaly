@@ -337,9 +337,7 @@ p {
     padding-bottom: 5rem;
 }
 
-.btn-comprar{
-    margin-right: -2%;
-}
+
 
 @media (max-width: 1200px){
     .e-card{
@@ -366,5 +364,9 @@ p {
 
     .bubble{
         filter: blur(1px);
+    }
+
+    .btn-comprar{
+        margin-right: -2%;
     }
 }
