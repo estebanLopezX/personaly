@@ -102,3 +102,27 @@
 .proyecto a:hover {
     background: rgba(255, 255, 255, 0.6);
 }
+
+.btn-comprar{
+    margin: 0%;
+    margin-right: 8%;
+}
+
+@media (max-width: 1200px) {
+    
+    .bubble-background {
+        display: flex;
+        flex-direction: column;  /* Alinea las burbujas de arriba hacia abajo */
+        justify-content: flex-start; /* Alinea las burbujas al principio */
+        height: 100%;  /* Hace que el contenedor ocupe todo el alto disponible */
+        width:20%;  /* Limita el ancho al 50% del contenedor principal */
+        position: fixed; /* Posiciona el contenedor de manera fija */
+        top: 0;  /* Alinea al principio de la página */
+        right: 0;  /* Alinea a la derecha */
+        padding: 0px; /* Un poco de espacio alrededor de las burbujas */
+    }
+
+    .bubble{
+        filter: blur(0px);
+    }
+}

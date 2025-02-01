@@ -68,7 +68,7 @@ function menu() {
         enlace.style.color = "white";
         enlace.style.fontSize = "20px";
         enlace.style.textDecoration = "none";
-        enlace.style.padding = "5px 15px";
+
         enlace.style.borderRadius = "5px";
         enlace.style.transition = "background 0.3s";
         enlace.style.width = "100%";

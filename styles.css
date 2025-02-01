@@ -49,6 +49,10 @@ nav a {
     font-size: 18px;
 }
 
+.btn-comprar{
+    margin: 0%;
+    margin-right: 8%;
+}
 /* Botón "Comprar Páginas" */
 .btn-comprar {
     background-color: #FFEE00;
@@ -59,7 +63,7 @@ nav a {
     font-size: 16px;
     font-weight: bold;
     border-radius: 5px;
-    margin-right: 50px;
+    margin-right: 50px
 }
 
 /* Estilo para la sección principal (imagen de fondo) */
@@ -750,6 +754,10 @@ a {
         scroll-behavior: smooth;
     }
 
+    .titulo{
+        font-size: 2rem;
+    }
+
     .carrusel__box {
         width: 90%;
         /* Más grande en móviles */
@@ -798,11 +806,20 @@ a {
         font-size: 1.2rem;
     }
 
-    .bubble-background{
-        align-items: start;
-        flex-direction: column;
-        height: 80%;
-        margin-left: -2rem;
+    .bubble-background {
+        display: flex;
+        flex-direction: column;  /* Alinea las burbujas de arriba hacia abajo */
+        justify-content: flex-start; /* Alinea las burbujas al principio */
+        height: 100%;  /* Hace que el contenedor ocupe todo el alto disponible */
+        width:10%;  /* Limita el ancho al 50% del contenedor principal */
+        position: fixed; /* Posiciona el contenedor de manera fija */
+        top: 0;  /* Alinea al principio de la página */
+        right: 0;  /* Alinea a la derecha */
+        padding: 0px; /* Un poco de espacio alrededor de las burbujas */
+    }
+
+    .bubble{
+        filter: blur(15px);
     }
 
     .servicios__border_imagenes1, .servicios__border_imagenes2{
