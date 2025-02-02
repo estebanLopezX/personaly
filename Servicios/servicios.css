@@ -5,8 +5,7 @@
     --black: hsl(240, 100%, 56%);
     --paragraph: hsl(0, 0%, 83%);
     --line: hsl(60, 9%, 17%);
-    --primary: hsl(85, 92%, 58%);
-
+    --primary: hsl(157, 92%, 58%);
     position: relative;
 
     display: flex;
@@ -151,13 +150,14 @@
     padding: 0.5rem;
     width: 100%;
     background-image: linear-gradient(0deg,
-            rgb(250, 226, 8) 0%,
-            rgb(226, 220, 43) 100%);
+            rgb(48, 229, 232) 0%,
+            #31f6ab 100%);
     font-size: 0.75rem;
-    color: rgb(23, 123, 237);
+    color: rgb(0, 0, 0);
     border: 0;
     border-radius: 9999px;
     box-shadow: inset 0 -2px 25px -4px var(--white);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .button:hover{
@@ -176,12 +176,12 @@
     padding: 8%;
 }
 
-.premium {
+.concierge {
     position: absolute;
     left: 45%;
     top:5%;
     background-image: linear-gradient(45deg, #ff6547 0%, #ffb144  51%, #ff7053  100%);
-    padding: 0.5rem 4.2rem;
+    padding: 0.5rem 3.4rem;
     font-size: 1.2rem;
     font-weight: bold;
     color: white;
@@ -193,13 +193,98 @@
     border-top-left-radius: 150px;
     border-top-right-radius: 150px;
     border-bottom-left-radius: 10px;
-    box-shadow: 0 9px 10px rgba(0, 0, 0, 0.60);
-
+    box-shadow: 0 9px 10px rgba(0, 0, 0, 0.90);
 }
 
-.premium::before{
-    content: "PREMIUM";
-    
+.concierge::before{
+    content: "CONCIERGE";
+}
+
+
+
+
+#plan-supremo:hover::before{
+    content: "100.00 USD";
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 16px;
+    left: 0;
+    width: 100%;
+    color: #26ff00;
+    z-index: 1000;
+}
+
+.supremo{
+    position: absolute;
+    left: 45%;
+    top:5%;
+    background-image: linear-gradient(45deg, #01579B 0%, #4FC3F7  51%, #039BE5  100%);
+    padding: 0.5rem 3.9rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    transform: rotate(35deg); /* Rotate y skew para el efecto doblado */
+    z-index: 1000; /* Para que esté encima de otros elementos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 9px 10px rgba(0, 0, 0, 0.90);
+}
+
+.supremo::before{
+    content: "SUPREMO";
+}
+
+.plus{
+    position: absolute;
+    left: 45%;
+    top:5%;
+    background-image: linear-gradient(45deg, #01579B 0%, #4FC3F7  51%, #039BE5  100%);
+    padding: 0.5rem 5.3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    transform: rotate(35deg); /* Rotate y skew para el efecto doblado */
+    z-index: 1000; /* Para que esté encima de otros elementos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 9px 10px rgba(0, 0, 0, 0.90);
+}
+
+.basico{
+    position: absolute;
+    left: 45%;
+    top:5%;
+    background-image: linear-gradient(45deg, #01579B 0%, #4FC3F7  51%, #039BE5  100%);
+    padding: 0.5rem 4.6rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    transform: rotate(35deg); /* Rotate y skew para el efecto doblado */
+    z-index: 1000; /* Para que esté encima de otros elementos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 9px 10px rgba(0, 0, 0, 0.90);
+}
+
+.basico::before{
+    content: "BASICO";
+}
+
+.plus::before{
+    content: "PLUS";
 }
 
 .esquinas {
@@ -226,6 +311,42 @@
 
 
 
+#plan-concierge:hover::before{
+    content: "110.00 USD";
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 16px;
+    left: 0;
+    width: 100%;
+    color: #26ff00;
+    z-index: 1000;
+}
+
+#plan-basico:hover::before{
+    content: "65.00 USD";
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 16px;
+    left: 0;
+    width: 100%;
+    color: #26ff00;
+    z-index: 10000;
+}
+
+#plan-plus:hover::before{
+    content: "45.00 USD";
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 16px;
+    left: 0;
+    width: 100%;
+    color: #2dbb13;
+    z-index: 10000;
+}
+
 .centrar__titulo{
     display: flex;
     justify-content: center;
@@ -237,6 +358,12 @@
     margin-right: 8%;
 }
 
+.btns{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+}
 
 @media (max-width: 1200px){
     .contenedor{
@@ -262,12 +389,9 @@
     .esquinas{
         left: 48.6%;
         border-top-left-radius: 95%;
+        display: none;
     }
 
-    .esquinas::after{
-        top: 975%;
-        left: 1300%;
-        padding: 45%;
-    }
+   
 }
 
