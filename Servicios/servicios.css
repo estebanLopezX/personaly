@@ -1,4 +1,4 @@
-/* From Uiverse.io by MuhammadHasann */
+
 
 .card {
     --white: hsl(0, 0%, 100%);
@@ -179,23 +179,49 @@
 .premium {
     position: absolute;
     left: 45%;
-    top: 2%;
+    top:5%;
     background-image: linear-gradient(45deg, #ff6547 0%, #ffb144  51%, #ff7053  100%);
     padding: 0.5rem 4.2rem;
     font-size: 1.2rem;
     font-weight: bold;
     color: white;
     transform: rotate(35deg); /* Rotate y skew para el efecto doblado */
-    z-index: 100; /* Para que esté encima de otros elementos */
+    z-index: 1000; /* Para que esté encima de otros elementos */
     display: flex;
     justify-content: center;
     align-items: center;
     border-top-left-radius: 150px;
     border-top-right-radius: 150px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 9px 10px rgba(0, 0, 0, 0.60);
+
 }
 
 .premium::before{
     content: "PREMIUM";
+    
+}
+
+.esquinas {
+    background-color: #f52900;
+    padding: 2%;
+    position: absolute;
+    top: -2.5%;
+    left: 48%;
+    border-top-left-radius: 45%;
+    z-index: 1;
+}
+
+.esquinas::after {
+    content: ''; /* El pseudo-elemento duplicará el estilo */
+    background-color: #f52900;
+    padding: 25%;
+    position: absolute;
+    top: 969%;
+    left: 1320%; /* Desplazamos el pseudo-elemento al lado izquierdo */
+    border-top-left-radius: 45%;
+    z-index: -1; /* Mantiene el duplicado en un plano inferior */
+    transform: rotate(180deg); /* Rota el pseudo-elemento en 2D */
 }
 
 
@@ -231,6 +257,17 @@
 
     .bubble{
         filter: blur(0px);
+    }
+
+    .esquinas{
+        left: 48.6%;
+        border-top-left-radius: 95%;
+    }
+
+    .esquinas::after{
+        top: 975%;
+        left: 1300%;
+        padding: 45%;
     }
 }
 
