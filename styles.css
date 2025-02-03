@@ -83,43 +83,148 @@ nav a {
     text-align: center;
     color: white;
 } 
-
+/* Estilos base para el contenedor de video */
 .video {
     position: absolute;
     z-index: -10;
-    width: 100%;
-    height: 100vh;  /* Asegura que el contenedor ocupe toda la altura de la pantalla */
+    width: 100%;  /* Ocupa el 100% del ancho del contenedor padre */
+    height: 100vh;  /* Ocupa toda la altura de la pantalla */
     background-color: #000000;
     box-sizing: border-box;
     display: flex;
     justify-content: flex-end;  /* Centra el video horizontalmente */
-    align-items:start;  /* Centra el video verticalmente */
+    align-items: start;  /* Centra el video verticalmente */
     overflow: hidden;
-    filter: blur(2px);
+    filter: blur(4px);
 }
 
+/* Estilos para el elemento <video> */
 video {
-    position: relative;
     width: 100%;  /* El video ocupa todo el ancho del contenedor */
     height: 100%;  /* El video ocupa todo el alto del contenedor */
     object-fit: cover;  /* Asegura que el video cubra completamente el área sin distorsionarse */
     box-sizing: border-box;
+    position: relative;
+}
+
+/* Estilos específicos para el video con la clase .video__ajustado */
+.video__ajustado {
+    width: 100%;  /* Asegura que el video ocupe el 100% del ancho del contenedor */
+    height: 100%;  /* Asegura que el video ocupe el 100% del alto del contenedor */
+    object-fit: cover;  /* Cubre el área sin distorsionar el video */
+    position: relative;
+}
+
+/* Estilos para el contenedor de video en móviles */
+.video__cell {
+    position: absolute;
+    z-index: -10;
+    width: 100%;  /* Ocupa el 100% del ancho del contenedor padre */
+    height: 100vh;  /* Ocupa toda la altura de la pantalla */
+    background-color: #000000;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;  /* Centra el video horizontalmente */
+    align-items: start;  /* Centra el video verticalmente */
+    overflow: hidden;
+    filter: blur(3px);
 }
 
 /* Ajustes para dispositivos móviles */
 @media (max-width: 768px) {
     .video {
+        display: block;
         height: 100vh;  /* Asegura que en móviles siga ocupando toda la pantalla */
-        width: 190%;
+        width: 100%;  /* Ajusta el ancho al 100% para evitar desbordamiento */
         filter: blur(3px);
     }
 
-    video {
-        object-fit: cover;  /* Asegura que el video cubra bien todo el espacio */
-        width:100%;  /* Se asegura de que el video ocupe el 100% del ancho */
-        height: 100%;  /* Se asegura de que el video ocupe el 100% del alto */
+    .video__cell {
+        display: none;  /* Oculta el contenedor de video para móviles */
     }
 }
+
+/* Ajustes para pantallas grandes (escritorio) */
+@media (min-width: 1200px) {
+    .video {
+        display: none;  /* Oculta el contenedor de video para móviles en escritorio */
+    }
+
+    .video__cell {
+        display: block;  /* Muestra el contenedor de video para escritorio */
+    }
+}/* Estilos base para el contenedor de video */
+.video {
+    position: absolute;
+    z-index: -10;
+    width: 100%;  /* Ocupa el 100% del ancho del contenedor padre */
+    height: 100vh;  /* Ocupa toda la altura de la pantalla */
+    background-color: #000000;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;  /* Centra el video horizontalmente */
+    align-items: start;  /* Centra el video verticalmente */
+    overflow: hidden;
+    filter: blur(4px);
+}
+
+/* Estilos para el elemento <video> */
+video {
+    width: 100%;  /* El video ocupa todo el ancho del contenedor */
+    height: 100%;  /* El video ocupa todo el alto del contenedor */
+    object-fit: cover;  /* Asegura que el video cubra completamente el área sin distorsionarse */
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Estilos específicos para el video con la clase .video__ajustado */
+.video__ajustado {
+    width: 190%;  /* Asegura que el video ocupe el 100% del ancho del contenedor */
+    height: 100%;  /* Asegura que el video ocupe el 100% del alto del contenedor */
+    object-fit: cover;  /* Cubre el área sin distorsionar el video */
+    position: relative;
+}
+
+/* Estilos para el contenedor de video en móviles */
+.video__cell {
+    position: absolute;
+    z-index: -10;
+    width: 100%;  /* Ocupa el 100% del ancho del contenedor padre */
+    height: 100vh;  /* Ocupa toda la altura de la pantalla */
+    background-color: #000000;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;  /* Centra el video horizontalmente */
+    align-items: start;  /* Centra el video verticalmente */
+    overflow: hidden;
+    filter: blur(3px);
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+    .video {
+        display: block;
+        height: 100vh;  /* Asegura que en móviles siga ocupando toda la pantalla */
+        width: 100%;  /* Ajusta el ancho al 100% para evitar desbordamiento */
+        filter: blur(3px);
+    }
+
+    .video__cell {
+        display: none;  /* Oculta el contenedor de video para móviles */
+    }
+}
+
+/* Ajustes para pantallas grandes (escritorio) */
+@media (min-width: 1200px) {
+    .video {
+        display: none;  /* Oculta el contenedor de video para móviles en escritorio */
+    }
+
+    .video__cell {
+        display: block;  /* Muestra el contenedor de video para escritorio */
+    }
+}
+
 
 .hero h1 {
     font-size: 2.5rem;
