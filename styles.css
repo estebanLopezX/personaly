@@ -277,6 +277,18 @@ video {
     /* Ocupa la otra mitad de la pantalla */
 }
 
+#img-1, #img-2, #img-3{
+    width: 500px;
+}
+
+h2 {
+    position: relative;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 30%), 
+                      linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.6) 30%);
+    color: white; /* Asegúrate de que el texto sea visible */
+    padding: 20px;
+}
+
 .img-nosotros img {
     width: 100%;
     /* La imagen se ajusta al contenedor */
@@ -510,108 +522,84 @@ video {
 
 
 /* CARRUSEL */
+/* Contenedor principal del carrusel */
 .carrusel {
-    background-color: #000000;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    /* Evita el salto de línea */
-    overflow: hidden;
-    /* Evita que las tarjetas se salgan */
-    color: white;
-    text-align: center;
     width: 100%;
-    height: auto;
-    scroll-snap-type: x mandatory;
-    /* Desplazamiento fluido en móviles */
+    overflow: hidden;
+    position: relative;
+    background-color: #00000000;
+    padding: 20px 0;
+    position: relative;
 }
 
-.carrusel__box {
-    background-color: #000000;
+/* Contenedor de las opiniones */
+.carrusel__contenedor {
     display: flex;
+    animation: desplazar 20s linear infinite; /* Animación infinita */
+}
+
+/* Estilos para cada opinión */
+.carrusel__opinion {
+    background: linear-gradient(135deg, #0b1647, #109ddf); /* Degradado de fondo */
+    flex: 0 0 10%; /* Cada opinión ocupa el 100% del ancho del contenedor */
+    border: 2px solid #ffffff; /* Borde morado */
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #fff;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    flex: 0 0 auto;
-    /* Evita que se reduzcan */
-    justify-content: center;
-    border: 1px solid #00AAFF;
-    border-radius: 20px;
-    width: 80%;
-    /* Ajustable en pantallas grandes */
-    max-width: 400px;
-    /* Máximo tamaño para evitar que sea muy grande */
-    height: auto;
-    margin: 10px;
-    padding: 1%;
-    scroll-snap-align: center;
-    /* Centra el elemento en móviles */
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
 }
 
-.carrusel__box__img {
-    width: 50%;
-    border-radius: 50%;
+.carrusel__opinion:hover{
+    transform: translateY(-10px); /* Levanta la tarjeta */
+    box-shadow: 0 0 30px rgba(200, 255, 0, 0.8); /* Aumenta la sombra */
+
 }
 
-.stars {
-    font-size: 25px;
+/* Contenedor de la imagen circular */
+.imagen-circular {
+    width: 150px; /* Tamaño del contenedor */
+    height: 150px; /* Tamaño del contenedor */
+    border-radius: 50%; /* Hace que el contenedor sea circular */
+    overflow: hidden; /* Recorta la imagen para que se ajuste al círculo */
+    border: 3px solid #ccc; /* Borde opcional */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional */
 }
 
-article {
-    background-color: #000000;
+/* Estilos para la imagen dentro del contenedor */
+.imagen-circular img {
+    width: 100%; /* Ajusta la imagen al ancho del contenedor */
+    height: 100%; /* Ajusta la imagen al alto del contenedor */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
 }
-
-/* Animación de desplazamiento del carrusel */
-@keyframes slide {
+/* Animación para el efecto infinito */
+@keyframes desplazar {
     0% {
         transform: translateX(0);
     }
-
-    20% {
-        transform: translateX(0);
-    }
-
-    25% {
-        transform: translate X(-100%);
-    }
-
-    45% {
-        transform: translateX(-100%);
-    }
-
-    50% {
-        transform: translateX(-200%);
-    }
-
-    55% {
-        transform: translateX(-250%);
-    }
-
-    60% {
-        transform: translateX(-280%);
-    }
-
-    70% {
-        transform: translateX(-200%);
-    }
-
-    75% {
-        transform: translateX(-300%);
-    }
-
     100% {
-        transform: translateX(0);
+        transform: translateX(-50%); /* Desplaza el contenedor a la izquierda */
     }
-
-    /* Regresa al inicio */
 }
 
 /* Aplicar animación solo en pantallas grandes */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .carrusel {
         background-color: #000000;
         animation: slide 40s linear infinite;
+    }
+}
+
+@media (min-width: 768px){
+    .carrusel{
+        background-color: #000000;
     }
 }
 

@@ -1,4 +1,6 @@
-
+body{
+    background-color: #000;
+}
 
 .card {
     --white: hsl(0, 0%, 100%);

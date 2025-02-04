@@ -14,7 +14,7 @@
 
     <!-- Header -->
     <header>
-        <div class="logo" style="background-color: rgba(255, 255, 255, 0.439); border-radius: 10%; margin-left: 10%;">
+        <div class="logo" style="background-color: rgba(187, 187, 187, 0.705); border-radius: 10%; margin-left: 10%;">
             <img src="IMG/ICON.png" alt="" width="55px">
         </div>
 
@@ -95,10 +95,6 @@
         <h1 class="primer__titulo" id="text2">
             DIGITAL CON CADA CLICK
         </h1>
-        
-        
-        
-        
         <br><br>
 
         <button class="btn-adquirir" onclick="window.location.href='https://wa.me/+5234612345678'">
@@ -113,7 +109,7 @@
                 <h2>En <strong style="color: #FFEE00;">MY TIENDA WEB</strong> nos dedicamos a transformar tus ideas en
                     experiencias digitales únicas. Si estás buscando una página web que combine diseño atractivo,
                     funcionalidad y rendimiento, ¡estás en el lugar correcto!</h2>
-                <div class="boton-sobre-nosotros">
+                <div class="boton-sobre-nosotros" style="position: relative; z-index: 100;">
                     <button class="btn-sobre-nosotros" onclick="window.location.href='./Servicios/servicios.html'">SOBRE NOSOTROS</button>
                 </div>
             </div>
@@ -129,7 +125,7 @@
 
             <article class="servicios-texto">
                 <div class="texto-servicios">
-                    <div class="img-servicios">
+                    <div class="img-servicios" style="position: relative; z-index: 10; ">
                         <img src="IMG/SERVICIOS.PNG" alt="Imagen Servicios" id="main-image">
                     </div>
                     <div class="te-ofrecemos">
@@ -179,47 +175,112 @@
 
     <article>
         <div class="carrusel">
-            <div class="carrusel__box">
-                <img src="IMG/SERVICIO-1.PNG" alt="usuarios" class="carrusel__box__img">
-                <p class="stars">⭐⭐⭐⭐</p>
-                <p class="texto">"No tenía idea de cómo hacer una página web para mi negocio, pero este servicio fue
-                    increíble. Me guiaron en cada paso, desde la elección del diseño hasta la optimización para móviles.
-                    Ahora tengo una web profesional que ha atraído muchos más clientes." – Ana G.</p>
-            </div>
-            <div class="carrusel__box">
-                <img src="IMG/SERVICIO-1.PNG" alt="usuarios" class="carrusel__box__img">
-                <p class="stars">⭐⭐⭐☆☆ </p>
-                <p class="texto">"¡Totalmente recomendado! Necesitaba una web moderna y funcional, y el resultado superó
-                    mis expectativas. Además de un diseño atractivo, me entregaron una página optimizada para SEO, lo
-                    que me ha ayudado a ganar más visibilidad en Google." – Luis M.</p>
-            </div>
-            <div class="carrusel__box">
-                <img src="IMG/SERVICIO-1.PNG" alt="usuarios" class="carrusel__box__img">
-                <p class="stars">⭐⭐⭐⭐☆</p>
-                <p class="texto">"No solo obtuve una web hermosa, sino que también me dieron consejos para mejorar la
-                    experiencia de usuario. Ahora mis clientes pueden navegar fácilmente y realizar compras sin
-                    problemas. Estoy muy contento con el resultado." – Carlos R.</p>
-            </div>
-            <div class="carrusel__box">
-                <img src="IMG/SERVICIO-1.PNG" alt="usuarios" class="carrusel__box__img">
-                <p class="stars">⭐⭐⭐☆☆ </p>
-                <p class="texto">"Desde la primera reunión entendieron exactamente lo que quería. Mi sitio web refleja
-                    perfectamente mi marca y comunica mi mensaje de manera clara y profesional. La atención al detalle
-                    es impresionante." – Marta P.</p>
-            </div>
-            <div class="carrusel__box">
-                <img src="IMG/SERVICIO-1.PNG" alt="usuarios" class="carrusel__box__img">
-                <p class="stars">⭐⭐⭐⭐☆ </p>
-                <p class="texto">"Mi empresa necesitaba una web corporativa con funcionalidades avanzadas, y este equipo
-                    lo logró con éxito. Me entregaron un sitio rápido, seguro y fácil de administrar. Definitivamente
-                    los volveré a contratar en el futuro." – Pedro S.</p>
-            </div>
-            <div class="carrusel__box">
-                <img src="IMG/SERVICIO-1.PNG" alt="usuarios" class="carrusel__box__img">
-                <p class="stars">⭐⭐⭐⭐</p>
-                <p class="texto">"Mi empresa necesitaba una web corporativa con funcionalidades avanzadas, y este equipo
-                    lo logró con éxito. Me entregaron un sitio rápido, seguro y fácil de administrar. Definitivamente
-                    los volveré a contratar en el futuro." – Pedro S.</p>
+            <div class="carrusel__contenedor">
+                <!-- Opiniones -->
+                <div class="carrusel__opinion">
+                    <div class="imagen-circular">
+                        <img src="./IMG/usuario02.png" alt="Foto del usuario">
+                    </div>
+                    <p>"El servicio superó mis expectativas. La página web que crearon para mi negocio es increíble y profesional. ¡Altamente recomendados!"</p>
+                    <div class="estrellas">
+                        <span>⭐⭐⭐⭐⭐</span> <!-- Esto puede ser dinámico si usas JavaScript o CSS -->
+                    </div>
+                    <span>- Juan Pérez</span>
+                </div>
+                <div class="carrusel__opinion">
+                    <div class="imagen-circular">
+                        <img src="./IMG/usuario03.png" alt="Foto del usuario">
+                    </div>
+                    <p>"Trabajaron con rapidez y atención al detalle. Mi sitio web ahora refleja perfectamente mi marca. ¡Muy satisfecho con los resultados!"</p>
+                    <div class="estrellas">
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <span>- Ana López</span>
+                </div>
+                <div class="carrusel__opinion">
+                    <div class="imagen-circular">
+                        <img src="./IMG/usuario01.png" alt="Foto del usuario">
+                    </div>
+                    <p>"¡Una experiencia increíble! El equipo fue muy profesional y entendió a la perfección lo que necesitaba para mi negocio online. ¡Volveré a contratarlos!"</p>
+                    <div class="estrellas">
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <span>- Carlos García</span>
+                </div>
+                
+                <!-- Duplicar las opiniones para el efecto infinito -->
+                <div class="carrusel__opinion">
+                    <div class="imagen-circular">
+                        <img src="./IMG/usuario04.png" alt="Foto del usuario">
+                    </div>
+                    <p>"El servicio superó mis expectativas. La página web que crearon para mi negocio es increíble y profesional. ¡Altamente recomendados!"</p>
+                    <div class="estrellas">
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <span>- Juan Pérez</span>
+                </div>
+                <div class="carrusel__opinion">
+                    <div class="imagen-circular">
+                        <img src="./IMG/usuario06.png" alt="Foto del usuario">
+                    </div>
+                    <p>"Trabajaron con rapidez y atención al detalle. Mi sitio web ahora refleja perfectamente mi marca. ¡Muy satisfecho con los resultados!"</p>
+                    <div class="estrellas">
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <span>- Ana López</span>
+                </div>
+                <div class="carrusel__opinion">
+                    <div class="imagen-circular">
+                        <img src="./IMG/usuario07.png" alt="Foto del usuario">
+                    </div>
+                    <p>"¡Una experiencia increíble! El equipo fue muy profesional y entendió a la perfección lo que necesitaba para mi negocio online. ¡Volveré a contratarlos!"</p>
+                    <div class="estrellas">
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <span>- Carlos García</span>
+                </div>
+                   
+                <div class="carrusel__opinion">
+                    <div class="imagen-circular">
+                        <img src="./IMG/usuario08.png" alt="Foto del usuario">
+                    </div>
+                    <p>"Mi sitio web ahora luce increíble y funcional. El equipo fue muy profesional y cumplió todos los plazos. ¡Totalmente recomendados!"</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <span>- Laura García</span>
+                </div>
+                <div class="carrusel__opinion">
+                    <div class="imagen-circular">
+                        <img src="./IMG/usuario01.png" alt="Foto del usuario">
+                    </div>
+                    <p>"Excelente atención y resultados. Mi página web no solo es visualmente atractiva, sino también muy fácil de navegar. ¡Gran trabajo!"</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <span>- Andrés López</span>
+                </div>
+                <div class="carrusel__opinion">
+                    <div class="imagen-circular">
+                        <img src="./IMG/usuario02.png" alt="Foto del usuario">
+                    </div>
+                    <p>"Un servicio rápido y de alta calidad. Mis clientes ahora tienen una experiencia en línea fluida gracias a mi nueva página web. ¡Muy agradecido!"</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <span>- María Rodríguez</span>
+                </div>
+                <div class="carrusel__opinion">
+                    <div class="imagen-circular">
+                        <img src="./IMG/usuario03.png" alt="Foto del usuario">
+                    </div>
+                    <p>"El equipo logró exactamente lo que necesitaba para mi negocio. La página web es moderna, dinámica y muy fácil de actualizar. ¡Estoy encantado!"</p>
+                    <span>- Carlos Martínez</span>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="carrusel__opinion">
+                    <div class="imagen-circular">
+                        <img src="./IMG/usuario05.png" alt="Foto del usuario">
+                    </div>
+                    <p>"Mi página web es perfecta. El diseño y la funcionalidad superaron mis expectativas. Definitivamente volveré para futuros proyectos. ¡Gracias!"</p>
+                    <span>- Sofía Pérez</span>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                           
             </div>
         </div>
     </article>

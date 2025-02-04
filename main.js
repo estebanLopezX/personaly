@@ -91,3 +91,14 @@ function menu() {
 
 
 
+/* Carrusel */ 
+
+const carrusel = document.querySelector('.carrusel__contenedor');
+
+carrusel.addEventListener('mouseenter', () => {
+    carrusel.style.animationPlayState = 'paused'; // Pausa la animación
+});
+
+carrusel.addEventListener('mouseleave', () => {
+    carrusel.style.animationPlayState = 'running'; // Reanuda la animación
+});
