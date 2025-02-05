@@ -1,0 +1,7 @@
+{
+    "name": "personaly/paginas_web",
+    "description": "Proyecto para enviar correos con PHPMailer",
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}

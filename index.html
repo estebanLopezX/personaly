@@ -49,44 +49,44 @@
     </div>
 
 
-<!-- From Uiverse.io by mrhyddenn -->
-<div class="bubble-background">
-    <div class="bubble">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+    <!-- From Uiverse.io by mrhyddenn -->
+    <div class="bubble-background">
+        <div class="bubble">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="bubble">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="bubble">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="bubble">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="bubble">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
-    <div class="bubble">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <div class="bubble">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <div class="bubble">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <div class="bubble">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-</div>
     <!-- Sección Principal -->
     <div class="hero">
         <h1 class="primer__titulo" id="text1">
@@ -102,7 +102,39 @@
         </button>
     </div>
 
-        
+
+    <!--  FORMULARIO -->
+    <article>
+        <div class="contact-form-container">
+            <div class="background-image"></div> <!-- Contenedor de la imagen de fondo -->
+            <h2 class="name__form">Contáctanos</h2>
+            <form action="./php/send_email.php" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required placeholder="Ingresa tu correo electrónico">
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu teléfono">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required placeholder="Escribe tu mensaje" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Enviar</button>
+            </form>
+        </div>
+    </article>
+
+
     <article>
         <div class="nosotros">
             <div class="texto-nosotros">
@@ -110,7 +142,8 @@
                     experiencias digitales únicas. Si estás buscando una página web que combine diseño atractivo,
                     funcionalidad y rendimiento, ¡estás en el lugar correcto!</h2>
                 <div class="boton-sobre-nosotros" style="position: relative; z-index: 100;">
-                    <button class="btn-sobre-nosotros" onclick="window.location.href='./Servicios/servicios.html'">SOBRE NOSOTROS</button>
+                    <button class="btn-sobre-nosotros" onclick="window.location.href='./Servicios/servicios.html'">SOBRE
+                        NOSOTROS</button>
                 </div>
             </div>
             <div class="img-nosotros">
@@ -181,7 +214,8 @@
                     <div class="imagen-circular">
                         <img src="./IMG/usuario02.png" alt="Foto del usuario">
                     </div>
-                    <p>"El servicio superó mis expectativas. La página web que crearon para mi negocio es increíble y profesional. ¡Altamente recomendados!"</p>
+                    <p>"El servicio superó mis expectativas. La página web que crearon para mi negocio es increíble y
+                        profesional. ¡Altamente recomendados!"</p>
                     <div class="estrellas">
                         <span>⭐⭐⭐⭐⭐</span> <!-- Esto puede ser dinámico si usas JavaScript o CSS -->
                     </div>
@@ -191,7 +225,8 @@
                     <div class="imagen-circular">
                         <img src="./IMG/usuario03.png" alt="Foto del usuario">
                     </div>
-                    <p>"Trabajaron con rapidez y atención al detalle. Mi sitio web ahora refleja perfectamente mi marca. ¡Muy satisfecho con los resultados!"</p>
+                    <p>"Trabajaron con rapidez y atención al detalle. Mi sitio web ahora refleja perfectamente mi marca.
+                        ¡Muy satisfecho con los resultados!"</p>
                     <div class="estrellas">
                         <span>⭐⭐⭐⭐⭐</span>
                     </div>
@@ -201,19 +236,21 @@
                     <div class="imagen-circular">
                         <img src="./IMG/usuario01.png" alt="Foto del usuario">
                     </div>
-                    <p>"¡Una experiencia increíble! El equipo fue muy profesional y entendió a la perfección lo que necesitaba para mi negocio online. ¡Volveré a contratarlos!"</p>
+                    <p>"¡Una experiencia increíble! El equipo fue muy profesional y entendió a la perfección lo que
+                        necesitaba para mi negocio online. ¡Volveré a contratarlos!"</p>
                     <div class="estrellas">
                         <span>⭐⭐⭐⭐⭐</span>
                     </div>
                     <span>- Carlos García</span>
                 </div>
-                
+
                 <!-- Duplicar las opiniones para el efecto infinito -->
                 <div class="carrusel__opinion">
                     <div class="imagen-circular">
                         <img src="./IMG/usuario04.png" alt="Foto del usuario">
                     </div>
-                    <p>"El servicio superó mis expectativas. La página web que crearon para mi negocio es increíble y profesional. ¡Altamente recomendados!"</p>
+                    <p>"El servicio superó mis expectativas. La página web que crearon para mi negocio es increíble y
+                        profesional. ¡Altamente recomendados!"</p>
                     <div class="estrellas">
                         <span>⭐⭐⭐⭐⭐</span>
                     </div>
@@ -223,7 +260,8 @@
                     <div class="imagen-circular">
                         <img src="./IMG/usuario06.png" alt="Foto del usuario">
                     </div>
-                    <p>"Trabajaron con rapidez y atención al detalle. Mi sitio web ahora refleja perfectamente mi marca. ¡Muy satisfecho con los resultados!"</p>
+                    <p>"Trabajaron con rapidez y atención al detalle. Mi sitio web ahora refleja perfectamente mi marca.
+                        ¡Muy satisfecho con los resultados!"</p>
                     <div class="estrellas">
                         <span>⭐⭐⭐⭐⭐</span>
                     </div>
@@ -233,18 +271,20 @@
                     <div class="imagen-circular">
                         <img src="./IMG/usuario07.png" alt="Foto del usuario">
                     </div>
-                    <p>"¡Una experiencia increíble! El equipo fue muy profesional y entendió a la perfección lo que necesitaba para mi negocio online. ¡Volveré a contratarlos!"</p>
+                    <p>"¡Una experiencia increíble! El equipo fue muy profesional y entendió a la perfección lo que
+                        necesitaba para mi negocio online. ¡Volveré a contratarlos!"</p>
                     <div class="estrellas">
                         <span>⭐⭐⭐⭐⭐</span>
                     </div>
                     <span>- Carlos García</span>
                 </div>
-                   
+
                 <div class="carrusel__opinion">
                     <div class="imagen-circular">
                         <img src="./IMG/usuario08.png" alt="Foto del usuario">
                     </div>
-                    <p>"Mi sitio web ahora luce increíble y funcional. El equipo fue muy profesional y cumplió todos los plazos. ¡Totalmente recomendados!"</p>
+                    <p>"Mi sitio web ahora luce increíble y funcional. El equipo fue muy profesional y cumplió todos los
+                        plazos. ¡Totalmente recomendados!"</p>
                     <div class="stars">⭐⭐⭐⭐⭐</div>
                     <span>- Laura García</span>
                 </div>
@@ -252,7 +292,8 @@
                     <div class="imagen-circular">
                         <img src="./IMG/usuario01.png" alt="Foto del usuario">
                     </div>
-                    <p>"Excelente atención y resultados. Mi página web no solo es visualmente atractiva, sino también muy fácil de navegar. ¡Gran trabajo!"</p>
+                    <p>"Excelente atención y resultados. Mi página web no solo es visualmente atractiva, sino también
+                        muy fácil de navegar. ¡Gran trabajo!"</p>
                     <div class="stars">⭐⭐⭐⭐⭐</div>
                     <span>- Andrés López</span>
                 </div>
@@ -260,7 +301,8 @@
                     <div class="imagen-circular">
                         <img src="./IMG/usuario02.png" alt="Foto del usuario">
                     </div>
-                    <p>"Un servicio rápido y de alta calidad. Mis clientes ahora tienen una experiencia en línea fluida gracias a mi nueva página web. ¡Muy agradecido!"</p>
+                    <p>"Un servicio rápido y de alta calidad. Mis clientes ahora tienen una experiencia en línea fluida
+                        gracias a mi nueva página web. ¡Muy agradecido!"</p>
                     <div class="stars">⭐⭐⭐⭐⭐</div>
                     <span>- María Rodríguez</span>
                 </div>
@@ -268,7 +310,8 @@
                     <div class="imagen-circular">
                         <img src="./IMG/usuario03.png" alt="Foto del usuario">
                     </div>
-                    <p>"El equipo logró exactamente lo que necesitaba para mi negocio. La página web es moderna, dinámica y muy fácil de actualizar. ¡Estoy encantado!"</p>
+                    <p>"El equipo logró exactamente lo que necesitaba para mi negocio. La página web es moderna,
+                        dinámica y muy fácil de actualizar. ¡Estoy encantado!"</p>
                     <span>- Carlos Martínez</span>
                     <div class="stars">⭐⭐⭐⭐⭐</div>
                 </div>
@@ -276,11 +319,12 @@
                     <div class="imagen-circular">
                         <img src="./IMG/usuario05.png" alt="Foto del usuario">
                     </div>
-                    <p>"Mi página web es perfecta. El diseño y la funcionalidad superaron mis expectativas. Definitivamente volveré para futuros proyectos. ¡Gracias!"</p>
+                    <p>"Mi página web es perfecta. El diseño y la funcionalidad superaron mis expectativas.
+                        Definitivamente volveré para futuros proyectos. ¡Gracias!"</p>
                     <span>- Sofía Pérez</span>
                     <div class="stars">⭐⭐⭐⭐⭐</div>
                 </div>
-                           
+
             </div>
         </div>
     </article>
@@ -307,28 +351,61 @@
         </section>
     </a>
 
+    <h1 class="titulo">REDES SOCIALES</h1>
+
     <footer id="footer">
-        <div class="redes__sociales">
-
-            <a href="https://www.facebook.com/profile.php?id=61570358366005&mibextid=ZbWKwL">
-                <p class="redes__sociales__texto">FAECEBOOK</p>
-                <img src="./IMG/Facebook.png" alt="Logo Facebook">
-            </a>
-
-            <a href="https://wa.me/+5234612345678">
-                <p class="redes__sociales__texto">WHATSAPP</p>
-                <img src="./IMG/Whatsaap.png" alt="Logo Whatsaap">
-            </a>
-
-            <a href="https://www.instagram.com/creaweb_digital?igsh=czNtajg2YzhlMXpn">
-                <p class="redes__sociales__texto">INSTAGRAM</p>
-                <img src="./IMG/Ig.png" alt="Logo Ig">
-            </a>
-
-            <a href="https://tiktok.com/@mymarca_personaly">
-                <p class="redes__sociales__texto">TIKTOK</p>
-                <img src="./IMG/Tiktok.png" alt="Logo Tiktok">
-            </a>
+        <div class="display__footer">
+            <div class="box__img__footer">
+                <div></div>
+                <img src="./IMG/imgFooter.png" alt="" class="img__redes">
+                <span class="facebook">
+                    <i class="bi bi-facebook"
+                        onclick="window.location.href='https://www.facebook.com/profile.php?id=61570358366005&mibextid=ZbWKwL'">
+                    </i>
+                </span>
+                <span class="ig">
+                    <i class="bi bi-instagram"
+                        onclick="window.location.href='https://www.instagram.com/creaweb_digital?igsh=czNtajg2YzhlMXpn'">
+                    </i>
+                </span>
+                <span class="whatsapp">
+                    <i class="bi bi-whatsapp" onclick="window.location.href='https://wa.me/+5234612345678'">
+                    </i>
+                </span>
+                <span class="whatsapp_box">
+                </span>
+                <span class="tiktok">
+                    <i class="bi bi-tiktok" onclick="window.location.href='https://wa.me/+5234612345678'">
+                    </i>
+                </span>
+            </div>
+            <div class="pqr__frecuentes">
+                <div class="fila1">
+                    <ul>
+                        <li>Pregunta Frecuente ??</li>
+                        <li>Pregunta Frecuente ??</li>
+                        <li>Pregunta Frecuente ??</li>
+                        <li>Pregunta Frecuente ??</li>
+                        <li>Pregunta Frecuente ??</li>
+                    </ul>
+                </div>
+                <div class="fila2">
+                    <ul>
+                        <li>Pregunta Frecuente ??</li>
+                        <li>Pregunta Frecuente ??</li>
+                        <li>Pregunta Frecuente ??</li>
+                        <li>Pregunta Frecuente ??</li>
+                    </ul>
+                </div>
+                <div class="fila3">
+                    <ul>
+                        <li>Pregunta Frecuente ??</li>
+                        <li>Pregunta Frecuente ??</li>
+                        <li>Pregunta Frecuente ??</li>
+                        <li>Pregunta Frecuente ??</li>
+                    </ul>
+                </div>
+            </div>
         </div>
         copyright (©) 2025
     </footer>
